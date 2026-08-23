@@ -3,116 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mery | Portfolio</title>
+
+    <title>Mery — Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">Mery.</div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-inner">
 
-    <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#skill">Skill</a>
-        <a href="#project">Project</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
+        <a href="#home" class="brand">
+            M<span>.</span>
+        </a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+
+        <a href="#contact" class="nav-contact">
+            Let's Talk
+        </a>
+
+    </div>
 </header>
+
 
 <main>
 
-<section class="hero">
-    <div class="hero-text">
-        <p class="small">HELLO, I'M</p>
+<!-- HERO -->
+<section class="hero" id="home">
 
-        <h1>Mery</h1>
+    <div class="hero-inner">
 
-        <h2>RPL Student</h2>
+        <div class="hero-copy">
 
-        <p class="description">
-            Saya adalah pelajar Rekayasa Perangkat Lunak
-            yang tertarik pada website, teknologi, dan desain.
-        </p>
+            <div class="availability">
+                <span></span>
+                Available to learn & create
+            </div>
 
-        <div class="buttons">
-            <a href="#project" class="button">Lihat Project</a>
-            <a href="#kontak" class="button outline">Hubungi Saya</a>
-        </div>
-    </div>
-
-    <div class="photo-box">
-        <img src="foto.png" alt="Foto Mery">
-    </div>
-</section>
-
-
-<section id="tentang" class="section">
-    <p class="label">TENTANG SAYA</p>
-    <h2>Saya suka belajar dan membuat sesuatu yang baru.</h2>
-
-    <p>
-        Saya sedang mempelajari pengembangan website,
-        pemrograman, dan desain antarmuka.
-    </p>
-</section>
-
-
-<section id="skill" class="section">
-    <p class="label">SKILLS</p>
-    <h2>Yang saya pelajari</h2>
-
-    <div class="skills">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>GitHub</div>
-    </div>
-</section>
-
-
-<section id="project" class="section">
-    <p class="label">PROJECT</p>
-    <h2>Project Saya</h2>
-
-    <div class="projects">
-
-        <div class="project-card">
-            <h3>Website Portfolio</h3>
-            <p>
-                Website portfolio pribadi menggunakan HTML dan CSS.
+            <p class="eyebrow">
+                REKAYASA PERANGKAT LUNAK
             </p>
-        </div>
 
-        <div class="project-card">
-            <h3>Website Skincare</h3>
-            <p>
-                Website sederhana untuk menampilkan produk skincare.
+            <h1>
+                Hi, I'm
+                <strong>Mery.</strong>
+            </h1>
+
+            <p class="hero-description">
+                Saya seorang pelajar RPL yang tertarik pada
+                pengembangan website, teknologi, dan desain
+                antarmuka yang sederhana.
             </p>
+
+            <div class="hero-actions">
+
+                <a href="#projects" class="btn-main">
+                    Explore Projects
+                    <span>↗</span>
+                </a>
+
+                <a href="#contact" class="btn-text">
+                    Contact me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO -->
+        <div class="portrait">
+
+            <div class="portrait-ring"></div>
+
+            <div class="portrait-image">
+                <img src="foto.png" alt="Foto Mery">
+            </div>
+
+            <div class="portrait-label">
+                <span>01</span>
+                RPL STUDENT
+            </div>
+
         </div>
 
     </div>
+
 </section>
 
 
-<section id="kontak" class="section contact">
-    <p class="label">KONTAK</p>
-    <h2>Mari terhubung</h2>
+<!-- ABOUT -->
+<section class="about section" id="about">
 
-    <p>Email: emailkamu@gmail.com</p>
-
-    <div class="contact-links">
-        <a href="https://github.com/">GitHub</a>
-        <a href="mailto:emailkamu@gmail.com">Email</a>
+    <div class="section-top">
+        <span>01 / ABOUT</span>
+        <div></div>
     </div>
+
+    <div class="about-grid">
+
+        <h2>
+            Belajar teknologi,
+            <em>membangun sesuatu.</em>
+        </h2>
+
+        <div class="about-text">
+
+            <p>
+                Saya sedang mengembangkan kemampuan di bidang
+                pemrograman dan pembuatan website.
+            </p>
+
+            <p>
+                Saya menikmati proses belajar, mencoba teknologi
+                baru, dan mengubah ide sederhana menjadi sebuah
+                website yang dapat digunakan.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
-</main>
+
+<!-- SKILLS -->
+<section class="skills section" id="skills">
+
+    <div class="section-top">
+        <span>02 / SKILLS</span>
+        <div></div>
+    </div>
+
+    <h2 class="section-title">
+        Things I work with.
+    </h2>
+
+    <div class="skill-grid">
+
+        <div class="skill">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>Website structure</p>
+        </div>
+
+        <div class="skill">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>Visual & responsive design</p>
+        </div>
+
+        <div class="skill">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Web interaction</p>
+        </div>
+
+        <div class="skill">
+            <span>04</span>
+            <h3>GitHub</h3>
+            <p>Project management</p>
+        </div>
+
+    </div>
+
+</section>
 
 
-<footer>
-    © 2026 Mery. All Rights Reserved.
-</footer>
-
-</body>
-</html>
+<!-- PROJECTS -->
+<section class="projects section"
