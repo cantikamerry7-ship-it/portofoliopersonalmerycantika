@@ -3,130 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mery — Portfolio</title>
-
+    <title>Mery | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="nav-inner">
+<header>
+    <div class="logo">MERY<span>.</span></div>
 
-        <a href="#home" class="brand">
-            M<span>.</span>
-        </a>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-        </nav>
-
-        <a href="#contact" class="nav-contact">
-            Let's Talk
-        </a>
-
-    </div>
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Kontak</a>
+    </nav>
 </header>
 
 
-<main>
-
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero">
 
-    <div class="hero-inner">
+    <div class="hero-text">
+        <p class="intro">HALO, SAYA</p>
 
-        <div class="hero-copy">
+        <h1>MERY</h1>
 
-            <div class="availability">
-                <span></span>
-                Available to learn & create
-            </div>
+        <h2>RPL Student & Future Developer</h2>
 
-            <p class="eyebrow">
-                REKAYASA PERANGKAT LUNAK
-            </p>
+        <p>
+            Saya adalah pelajar Rekayasa Perangkat Lunak
+            yang tertarik pada website, teknologi, dan desain.
+            Saya senang belajar dan mencoba hal-hal baru.
+        </p>
 
-            <h1>
-                Hi, I'm
-                <strong>Mery.</strong>
-            </h1>
-
-            <p class="hero-description">
-                Saya seorang pelajar RPL yang tertarik pada
-                pengembangan website, teknologi, dan desain
-                antarmuka yang sederhana.
-            </p>
-
-            <div class="hero-actions">
-
-                <a href="#projects" class="btn-main">
-                    Explore Projects
-                    <span>↗</span>
-                </a>
-
-                <a href="#contact" class="btn-text">
-                    Contact me
-                </a>
-
-            </div>
-
+        <div class="buttons">
+            <a href="#projects">Lihat Project</a>
+            <a href="#contact" class="outline">Hubungi Saya</a>
         </div>
+    </div>
 
-
-        <!-- FOTO -->
-        <div class="portrait">
-
-            <div class="portrait-ring"></div>
-
-            <div class="portrait-image">
-                <img src="foto.png" alt="Foto Mery">
-            </div>
-
-            <div class="portrait-label">
-                <span>01</span>
-                RPL STUDENT
-            </div>
-
+    <div class="hero-photo">
+        <div class="circle">
+            <img src="foto.png" alt="Foto Mery">
         </div>
-
+        <span class="photo-text">RPL • 2026</span>
     </div>
 
 </section>
 
 
 <!-- ABOUT -->
-<section class="about section" id="about">
+<section id="about" class="section">
 
-    <div class="section-top">
-        <span>01 / ABOUT</span>
-        <div></div>
+    <div class="number">01.</div>
+
+    <div class="section-title">
+        <p>TENTANG SAYA</p>
+        <h2>Mengenal saya lebih dekat.</h2>
     </div>
 
-    <div class="about-grid">
+    <div class="about-content">
 
-        <h2>
-            Belajar teknologi,
-            <em>membangun sesuatu.</em>
-        </h2>
-
-        <div class="about-text">
-
+        <div>
             <p>
-                Saya sedang mengembangkan kemampuan di bidang
-                pemrograman dan pembuatan website.
+                Saya merupakan pelajar jurusan Rekayasa
+                Perangkat Lunak yang memiliki ketertarikan
+                terhadap dunia teknologi dan pengembangan
+                website.
             </p>
 
             <p>
-                Saya menikmati proses belajar, mencoba teknologi
-                baru, dan mengubah ide sederhana menjadi sebuah
-                website yang dapat digunakan.
+                Saya terus belajar untuk meningkatkan kemampuan
+                dalam pemrograman, desain, dan pembuatan
+                project digital.
             </p>
+        </div>
 
+        <div class="info-box">
+            <div>
+                <span>Pendidikan</span>
+                <strong>SMK • RPL</strong>
+            </div>
+
+            <div>
+                <span>Fokus</span>
+                <strong>Web Development</strong>
+            </div>
+
+            <div>
+                <span>Minat</span>
+                <strong>Technology & Design</strong>
+            </div>
         </div>
 
     </div>
@@ -135,41 +103,39 @@
 
 
 <!-- SKILLS -->
-<section class="skills section" id="skills">
+<section id="skills" class="dark-section">
 
-    <div class="section-top">
-        <span>02 / SKILLS</span>
-        <div></div>
+    <div class="number">02.</div>
+
+    <div class="section-title">
+        <p>KEAHLIAN</p>
+        <h2>Yang sedang saya pelajari.</h2>
     </div>
 
-    <h2 class="section-title">
-        Things I work with.
-    </h2>
-
-    <div class="skill-grid">
+    <div class="skills">
 
         <div class="skill">
             <span>01</span>
             <h3>HTML</h3>
-            <p>Website structure</p>
+            <p>Membuat struktur website yang terorganisir.</p>
         </div>
 
         <div class="skill">
             <span>02</span>
             <h3>CSS</h3>
-            <p>Visual & responsive design</p>
+            <p>Membuat tampilan website menarik dan responsive.</p>
         </div>
 
         <div class="skill">
             <span>03</span>
             <h3>JavaScript</h3>
-            <p>Web interaction</p>
+            <p>Membuat website menjadi lebih interaktif.</p>
         </div>
 
         <div class="skill">
             <span>04</span>
             <h3>GitHub</h3>
-            <p>Project management</p>
+            <p>Mengelola dan menyimpan project website.</p>
         </div>
 
     </div>
@@ -177,5 +143,128 @@
 </section>
 
 
-<!-- PROJECTS -->
-<section class="projects section"
+<!-- PROJECT -->
+<section id="projects" class="section">
+
+    <div class="number">03.</div>
+
+    <div class="section-title">
+        <p>PROJECT</p>
+        <h2>Beberapa karya saya.</h2>
+    </div>
+
+    <div class="projects">
+
+        <div class="project">
+            <div class="project-number">01</div>
+
+            <div>
+                <small>HTML • CSS</small>
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Website portfolio pribadi untuk
+                    menampilkan informasi dan kemampuan.
+                </p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </div>
+
+
+        <div class="project">
+            <div class="project-number">02</div>
+
+            <div>
+                <small>WEB DESIGN</small>
+                <h3>Website Skincare</h3>
+                <p>
+                    Konsep website produk skincare
+                    dengan tampilan clean dan modern.
+                </p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </div>
+
+
+        <div class="project">
+            <div class="project-number">03</div>
+
+            <div>
+                <small>HTML • CSS • JS</small>
+                <h3>Simple Website</h3>
+                <p>
+                    Project pembelajaran untuk
+                    mengembangkan kemampuan web.
+                </p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY ME -->
+<section class="why">
+
+    <p>WHY ME?</p>
+
+    <h2>
+        Selalu ingin
+        <em>berkembang.</em>
+    </h2>
+
+    <div class="why-grid">
+
+        <div>
+            <span>01</span>
+            <h3>Curious</h3>
+            <p>Senang mempelajari hal-hal baru.</p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>Creative</h3>
+            <p>Senang membuat ide menjadi sesuatu yang nyata.</p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>Growth</h3>
+            <p>Terus berusaha meningkatkan kemampuan.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <p>04. / KONTAK</p>
+
+    <h2>Mari terhubung.</h2>
+
+    <p>
+        Terbuka untuk belajar, berdiskusi,
+        dan mencoba project baru.
+    </p>
+
+    <a href="mailto:emailkamu@gmail.com">
+        emailkamu@gmail.com ↗
+    </a>
+
+</section>
+
+
+<footer>
+    <span>© 2026 Mery.</span>
+    <span>Personal Portfolio</span>
+</footer>
+
+</body>
+        </html>
