@@ -610,110 +610,36 @@ img {
    SKILLS
 ========================================= */
 
-.skills {
-    background: #080b16;
-    color: white;
-}
+.skill-progress {
+    width: 100%;
+    height: 8px;
 
-.skills .section-heading h2 {
-    color: white;
-}
-
-.skill-card {
-    padding: 32px;
-
-    background:
-        #111425;
-
-    border:
-        1px solid #252a40;
-
-    border-radius: 22px;
-
-    transition: var(--transition);
-}
-
-.skill-card:hover {
-    transform: translateY(-6px);
-
-    border-color:
-        rgba(96, 165, 250, 0.5);
-}
-
-.skills-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 22px;
-}
-
-.skill-top {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    margin-bottom: 40px;
-}
-
-.skill-icon {
-    width: 110px;
-    height: 90px;
-
-    display: grid;
-    place-items: center;
+    background: rgba(255,255,255,0.12);
 
     border-radius: 20px;
 
-    font-size: 22px;
+    overflow: hidden;
 
-    font-weight: 700;
+    margin-top: 25px;
 }
 
-.skill-icon.html {
-    background: rgba(239, 68, 68, 0.15);
-    color: #fb7185;
+.skill-progress span {
+    display: block;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f472b6,
+            #a78bfa,
+            #60a5fa
+        );
 }
 
-.skill-icon.css {
-    background: rgba(37, 99, 235, 0.20);
-    color: #60a5fa;
-}
 
-.skill-icon.js {
-    background: rgba(234, 179, 8, 0.15);
-    color: #facc15;
-}
-
-.skill-icon.github {
-    background: rgba(148, 163, 184, 0.12);
-    color: #cbd5e1;
-}
-
-.skill-top > strong {
-    color: #f472b6;
-
-    font-size: 25px;
-}
-
-.skill-card h3 {
-    font-size: 24px;
-
-    margin-bottom: 12px;
-}
-
-.skill-card p {
-    color: #9ca3b8;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    min-height: 55px;
-}
 
 .progress {
     width: 100%;
