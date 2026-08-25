@@ -19,7 +19,6 @@
 <body>
 
 <!-- ================= NAVBAR ================= -->
-
 <header class="navbar">
     <div class="nav-container">
 
@@ -27,12 +26,18 @@
             Mery<span>.</span>
         </a>
 
-        <nav class="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <!-- Tombol menu HP -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#skills" onclick="closeMenu()">Skills</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
         </nav>
 
         <a href="#contact" class="nav-btn">
@@ -41,6 +46,7 @@
 
     </div>
 </header>
+
 
 
 <!-- ================= HOME ================= -->
