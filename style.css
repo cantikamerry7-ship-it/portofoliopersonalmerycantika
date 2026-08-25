@@ -19,10 +19,10 @@
     --pink: #f472b6;
     --purple: #a78bfa;
 
-    --border: rgba(255,255,255,0.15);
+    --border: #e2e8f0;
 
     --shadow:
-        0 20px 50px rgba(15,23,42,0.18);
+        0 20px 50px rgba(15,23,42,0.12);
 
     --transition:
         all 0.3s ease;
@@ -45,9 +45,13 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+
     background: var(--white);
+
     color: var(--text);
+
     line-height: 1.6;
+
     overflow-x: hidden;
 }
 
@@ -59,6 +63,10 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+button {
+    font-family: inherit;
 }
 
 .container {
@@ -78,13 +86,16 @@ img {
 
 .navbar {
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
+
     z-index: 999;
 
     background:
-        rgba(255, 255, 255, 0.94);
+        rgba(255,255,255,0.95);
 
     backdrop-filter: blur(15px);
 
@@ -95,17 +106,23 @@ img {
 .nav-container {
     width: 90%;
     max-width: 1100px;
+
     height: 75px;
+
     margin: auto;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 .logo {
     font-size: 28px;
+
     font-weight: 800;
+
     color: var(--navy);
 }
 
@@ -115,13 +132,17 @@ img {
 
 .nav-menu {
     display: flex;
+
     align-items: center;
+
     gap: 30px;
 }
 
 .nav-menu a {
     color: var(--gray);
+
     font-size: 13px;
+
     font-weight: 500;
 
     transition: var(--transition);
@@ -135,19 +156,42 @@ img {
     padding: 11px 20px;
 
     background: var(--blue);
+
     color: white;
 
     border-radius: 8px;
 
     font-size: 12px;
+
     font-weight: 600;
 
     transition: var(--transition);
 }
 
 .nav-btn:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+    background: var(--blue-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* MENU BUTTON */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--blue);
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    padding: 5px;
 }
 
 
@@ -157,10 +201,14 @@ img {
 
 .hero {
     min-height: 100vh;
-    padding: 130px 20px 80px;
+
+    padding:
+        130px 20px 80px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background:
@@ -176,12 +224,15 @@ img {
 
 .hero-container {
     width: 100%;
+
     max-width: 900px;
 
     display: flex;
+
     flex-direction: column;
 
     align-items: center;
+
     text-align: center;
 }
 
@@ -192,12 +243,15 @@ img {
 
 .hero-photo {
     width: 360px;
+
     height: 360px;
 
     position: relative;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     margin-bottom: 45px;
@@ -205,6 +259,7 @@ img {
 
 .photo-ring {
     width: 285px;
+
     height: 285px;
 
     padding: 9px;
@@ -214,20 +269,22 @@ img {
     background:
         linear-gradient(
             135deg,
-            #2563eb,
-            #60a5fa
+            var(--blue),
+            var(--blue-light)
         );
 
     position: relative;
+
     z-index: 3;
 
     box-shadow:
         0 25px 60px
-        rgba(37, 99, 235, 0.22);
+        rgba(37,99,235,0.22);
 }
 
 .photo-ring img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -242,19 +299,21 @@ img {
     position: absolute;
 
     width: 340px;
+
     height: 340px;
 
     border-radius: 50%;
 
     border:
         2px dashed
-        rgba(37, 99, 235, 0.25);
+        rgba(37,99,235,0.25);
 
     animation:
         rotate 18s linear infinite;
 }
 
 @keyframes rotate {
+
     from {
         transform: rotate(0deg);
     }
@@ -262,6 +321,7 @@ img {
     to {
         transform: rotate(360deg);
     }
+
 }
 
 
@@ -273,12 +333,15 @@ img {
     position: absolute;
 
     left: 0;
+
     bottom: 15px;
 
     z-index: 5;
 
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 
     padding: 13px 18px;
@@ -289,7 +352,7 @@ img {
 
     box-shadow:
         0 15px 35px
-        rgba(15, 23, 42, 0.12);
+        rgba(15,23,42,0.12);
 
     text-align: left;
 
@@ -308,15 +371,18 @@ img {
 
 .learning-box strong {
     font-size: 11px;
+
     color: var(--navy);
 }
 
 .learning-box small {
     font-size: 10px;
+
     color: var(--gray);
 }
 
 @keyframes floating {
+
     0%,
     100% {
         transform: translateY(0);
@@ -325,6 +391,7 @@ img {
     50% {
         transform: translateY(-8px);
     }
+
 }
 
 
@@ -340,6 +407,7 @@ img {
     color: var(--blue);
 
     font-size: 16px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -348,7 +416,8 @@ img {
 }
 
 .hero-content h1 {
-    font-size: clamp(55px, 10vw, 90px);
+    font-size:
+        clamp(55px,10vw,90px);
 
     line-height: 1;
 
@@ -363,7 +432,7 @@ img {
     margin-top: 15px;
 
     font-size:
-        clamp(25px, 5vw, 42px);
+        clamp(25px,5vw,42px);
 
     line-height: 1.2;
 
@@ -388,7 +457,7 @@ img {
 
 
 /* =========================================
-   HERO BUTTONS
+   BUTTON
 ========================================= */
 
 .hero-buttons {
@@ -417,16 +486,19 @@ img {
 
 .btn-primary {
     background: var(--blue);
+
     color: white;
 
     box-shadow:
         0 12px 25px
-        rgba(37, 99, 235, 0.20);
+        rgba(37,99,235,0.20);
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-3px);
+    background: var(--blue-dark);
+
+    transform:
+        translateY(-3px);
 }
 
 .btn-outline {
@@ -440,9 +512,11 @@ img {
 
 .btn-outline:hover {
     background: var(--blue);
+
     color: white;
 
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 }
 
 
@@ -452,6 +526,7 @@ img {
 
 .social-links {
     display: flex;
+
     justify-content: center;
 
     gap: 30px;
@@ -496,7 +571,7 @@ img {
 
 .section-heading h2 {
     font-size:
-        clamp(35px, 7vw, 52px);
+        clamp(35px,7vw,52px);
 
     line-height: 1.1;
 
@@ -532,8 +607,7 @@ img {
 .about-card {
     padding: 35px;
 
-    background:
-        var(--gray-light);
+    background: var(--soft-white);
 
     border:
         1px solid var(--border);
@@ -544,16 +618,20 @@ img {
 }
 
 .about-card:hover {
-    transform: translateY(-5px);
+    transform:
+        translateY(-5px);
 
-    box-shadow: var(--shadow);
+    box-shadow:
+        var(--shadow);
 }
 
 .about-icon {
     width: 55px;
+
     height: 55px;
 
     display: grid;
+
     place-items: center;
 
     background: #dbeafe;
@@ -581,6 +659,7 @@ img {
 
 .about-info {
     display: flex;
+
     flex-direction: column;
 }
 
@@ -610,44 +689,139 @@ img {
    SKILLS
 ========================================= */
 
-.skill-progress {
-    width: 100%;
-    height: 8px;
+.skills {
+    background:
+        linear-gradient(
+            135deg,
+            #10152f,
+            #17265f
+        );
 
-    background: rgba(255,255,255,0.12);
-
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    margin-top: 25px;
+    color: white;
 }
 
-.skill-progress span {
-    display: block;
+.skills .section-heading p {
+    color: #60a5fa;
+}
 
-    height: 100%;
+.skills .section-heading h2 {
+    color: white;
+}
 
-    border-radius: 20px;
+.skills .section-heading h2 span {
+    color: #60a5fa;
+}
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
 
     background:
         linear-gradient(
-            90deg,
-            #f472b6,
-            #a78bfa,
-            #60a5fa
+            145deg,
+            #1d2d6b,
+            #14204d
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius: 20px;
+
+    color: white;
+
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #60a5fa;
+
+    box-shadow:
+        0 20px 50px
+        rgba(37,99,235,0.25);
+}
+
+.skill-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.skill-top strong {
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+.skill-icon {
+    width: 65px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--pink),
+            var(--purple)
         );
 }
 
+.skill-card h3 {
+    color: white;
 
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    min-height: 60px;
+}
 
 .progress {
     width: 100%;
+
     height: 7px;
 
-    margin-top: 28px;
+    margin-top: 25px;
 
-    background: #252a3d;
+    background:
+        rgba(255,255,255,0.12);
 
     border-radius: 20px;
 
@@ -664,8 +838,9 @@ img {
     background:
         linear-gradient(
             90deg,
-            #f472b6,
-            #a78bfa
+            var(--pink),
+            var(--purple),
+            var(--blue-light)
         );
 }
 
@@ -682,7 +857,7 @@ img {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 22px;
 }
@@ -701,18 +876,22 @@ img {
 }
 
 .project-card:hover {
-    transform: translateY(-7px);
+    transform:
+        translateY(-7px);
 
-    box-shadow: var(--shadow);
+    box-shadow:
+        var(--shadow);
 }
 
 .project-cover {
     height: 210px;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     color: white;
@@ -728,21 +907,24 @@ img {
     position: absolute;
 
     width: 230px;
+
     height: 230px;
 
     border:
         30px solid
-        rgba(255, 255, 255, 0.08);
+        rgba(255,255,255,0.08);
 
     border-radius: 50%;
 
     right: -70px;
+
     bottom: -100px;
 }
 
 .project-cover small,
 .project-cover h3 {
     position: relative;
+
     z-index: 2;
 }
 
@@ -816,7 +998,7 @@ img {
 .tags span {
     padding: 6px 9px;
 
-    background: var(--blue-soft);
+    background: #eff6ff;
 
     color: var(--blue);
 
@@ -850,7 +1032,7 @@ img {
 ========================================= */
 
 .contact {
-    background: var(--blue-soft);
+    background: #eff6ff;
 }
 
 .contact-box {
@@ -867,7 +1049,8 @@ img {
 
     border-radius: 24px;
 
-    box-shadow: var(--shadow);
+    box-shadow:
+        var(--shadow);
 
     text-align: center;
 }
@@ -914,7 +1097,8 @@ img {
 
     border-color: var(--blue);
 
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 }
 
 
@@ -981,9 +1165,14 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .skills-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
     .project-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2,1fr);
     }
 
 }
@@ -1015,7 +1204,86 @@ footer {
         font-size: 24px;
     }
 
+    .menu-toggle {
+        display: block;
+
+        margin-left: auto;
+
+        position: relative;
+
+        z-index: 1002;
+    }
+
     .nav-menu {
+        position: absolute;
+
+        top: 68px;
+
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        background: white;
+
+        border-top:
+            1px solid #e5e7eb;
+
+        box-shadow:
+            0 15px 30px
+            rgba(15,23,42,0.12);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-15px);
+
+        transition:
+            all 0.3s ease;
+
+        z-index: 1001;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+    }
+
+    .nav-menu a {
+        width: 100%;
+
+        padding: 17px 20px;
+
+        text-align: center;
+
+        color: #334155;
+
+        font-size: 15px;
+
+        border-bottom:
+            1px solid #f1f5f9;
+    }
+
+    .nav-menu a:hover {
+        color: var(--blue);
+
+        background: #eff6ff;
+    }
+
+    .nav-btn {
         display: none;
     }
 
@@ -1031,6 +1299,7 @@ footer {
 
     .hero-photo {
         width: 310px;
+
         height: 310px;
 
         margin-bottom: 35px;
@@ -1038,16 +1307,19 @@ footer {
 
     .photo-ring {
         width: 245px;
+
         height: 245px;
     }
 
     .photo-circle {
         width: 295px;
+
         height: 295px;
     }
 
     .learning-box {
         left: 0;
+
         bottom: 5px;
 
         padding: 11px 15px;
@@ -1099,10 +1371,6 @@ footer {
 
     .skill-card {
         padding: 25px;
-    }
-
-    .skill-top {
-        margin-bottom: 30px;
     }
 
 
@@ -1157,8 +1425,10 @@ footer {
 
     .hero-photo {
         transform: scale(0.92);
+
         margin-top: -10px;
+
         margin-bottom: 15px;
     }
 
-}
+   }
