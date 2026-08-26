@@ -685,300 +685,101 @@ button {
 }
 
 
-/* =========================================
+/* =========================
    SKILLS
-========================================= */
+========================= */
 
-.skills {
-    background:
-        linear-gradient(
-            135deg,
-            #10152f,
-            #17265f
-        );
-
-    color: white;
+#skills {
+    padding: 80px 10%;
+    background: #f8fbff;
+    text-align: center;
 }
 
-.skills .section-heading p {
-    color: #60a5fa;
+#skills h2 {
+    font-size: 35px;
+    color: #1e3a8a;
+    margin-bottom: 40px;
 }
 
-.skills .section-heading h2 {
-    color: white;
-}
-
-.skills .section-heading h2 span {
-    color: #60a5fa;
-}
-
-.skills-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap: 20px;
-}
-
-.skill-card {
-    padding: 30px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #1d2d6b,
-            #14204d
-        );
-
-    border:
-        1px solid
-        rgba(255,255,255,0.12);
-
-    border-radius: 20px;
-
-    color: white;
-
-    transition: var(--transition);
-}
-
-.skill-card:hover {
-    transform:
-        translateY(-8px);
-
-    border-color:
-        #60a5fa;
-
-    box-shadow:
-        0 20px 50px
-        rgba(37,99,235,0.25);
-}
-
-.skill-top {
+.skills-container {
     display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    margin-bottom: 20px;
-}
-
-.skill-top strong {
-    color: #cbd5e1;
-
-    font-size: 13px;
-}
-
-.skill-icon {
-    width: 65px;
-
-    height: 55px;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 15px;
-
-    color: white;
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--pink),
-            var(--purple)
-        );
-}
-
-.skill-card h3 {
-    color: white;
-
-    font-size: 19px;
-
-    margin-bottom: 10px;
-}
-
-.skill-card p {
-    color: #cbd5e1;
-
-    font-size: 12px;
-
-    line-height: 1.7;
-/* =========================================
-   SKILLS - PUTIH + BIRU
-========================================= */
-
-.skills {
-    background: #ffffff;
-}
-
-.skills .section-heading {
-    margin-bottom: 55px;
-}
-
-.skills .section-heading p {
-    color: #2563eb;
-}
-
-.skills .section-heading h2 {
-    color: #111827;
-}
-
-.skills .section-heading h2 span {
-    color: #2563eb;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-}
-
-.skill-card {
-    padding: 30px;
-    background: #ffffff;
-
-    border: 1px solid #e2e8f0;
-    border-radius: 22px;
-
-    box-shadow:
-        0 10px 30px rgba(37, 99, 235, 0.08);
-
-    transition: all 0.3s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-6px);
-
-    border-color: #93c5fd;
-
-    box-shadow:
-        0 18px 40px rgba(37, 99, 235, 0.14);
-}
-
-.skill-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 25px;
-}
-
-.skill-icon {
-    width: 70px;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #60a5fa
-        );
-
-    color: #ffffff;
-
-    font-size: 15px;
-    font-weight: 800;
-
-    box-shadow:
-        0 10px 25px rgba(37, 99, 235, 0.20);
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.skill-top strong {
+.skill-card {
+    width: 200px;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 2px solid #dbeafe;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.10);
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.20);
+}
+
+.skill-card i {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* Warna setiap skill */
+
+.skill-card.html i {
     color: #2563eb;
-    font-size: 15px;
+}
+
+.skill-card.css i {
+    color: #3b82f6;
+}
+
+.skill-card.javascript i {
+    color: #60a5fa;
+}
+
+.skill-card.github i {
+    color: #1e40af;
 }
 
 .skill-card h3 {
-    color: #111827;
-
+    color: #1e3a8a;
     font-size: 21px;
-    font-weight: 700;
-
     margin-bottom: 10px;
 }
 
 .skill-card p {
     color: #64748b;
-
-    font-size: 13px;
-    line-height: 1.8;
-
-    margin-bottom: 22px;
+    font-size: 14px;
 }
 
-/* PROGRESS BAR */
-
-.progress {
-    width: 100%;
-    height: 8px;
-
-    margin-top: 20px;
-
-    background: #e5edff;
-
-    border-radius: 50px;
-
-    overflow: hidden;
-}
-
-.progress span {
-    display: block;
-
-    height: 100%;
-
-    border-radius: 50px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #2563eb,
-            #60a5fa
-        );
-}
-
-
-/* =========================================
-   SKILLS MOBILE
-========================================= */
+/* Tampilan HP */
 
 @media (max-width: 600px) {
+    #skills {
+        padding: 60px 5%;
+    }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
+    .skills-container {
+        gap: 15px;
     }
 
     .skill-card {
-        padding: 25px;
-        border-radius: 20px;
+        width: 150px;
+        padding: 25px 15px;
     }
 
-    .skill-icon {
-        width: 65px;
-        height: 65px;
-    }
-
-    .skill-card h3 {
-        font-size: 20px;
-    }
-
-    .skill-card p {
-        font-size: 13px;
+    .skill-card i {
+        font-size: 38px;
     }
 }
-
+        
 
 /* =========================================
    PROJECTS
